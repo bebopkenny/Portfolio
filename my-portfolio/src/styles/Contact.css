@@ -1,0 +1,42 @@
+.contact {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    p, li {
+      font-size: 1rem;
+    }
+  
+    #hero h1 {
+      font-size: 2rem;
+    }
+  }

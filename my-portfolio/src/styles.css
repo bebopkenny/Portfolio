@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #003366;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(to bottom, #0073e6, #003366);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+}
+
+#hero p {
+  font-size: 1.2em;
+}
+
+.construction-notice a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.construction-notice a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+#about, #projects, #skills, #contact {
+  padding: 50px 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #003366;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Projects Section */
+.project {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.project a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.project .links a {
+  display: block;
+  margin: 10px 0;
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project .links a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Skills Section */
+#skills ul {
+  max-width: 800px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+}
+
+#skills ul li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Contact Section */
+#contact ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+#contact ul li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #003366;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero {
+    padding: 50px 20px;
+  }
+
+  #hero h1 {
+    font-size: 2em;
+  }
+
+  #hero p {
+    font-size: 1em;
+  }
+
+  .project {
+    max-width: 100%;
+    margin: 10px auto;
+  }
+
+  #about p, #skills ul {
+    padding: 0 20px;
+  }
+
+  .construction-notice a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  #hero h1 {
+    font-size: 1.8em;
+  }
+
+  #hero p {
+    font-size: 0.9em;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
