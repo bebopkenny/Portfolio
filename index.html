@@ -1,81 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kenny Garcia's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Redirect</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            background: #ff6a00;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            background: #ff9000;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .background-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            animation: float 10s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+                opacity: 0.6;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="hero">
-    <h1>Welcome to Kenny Garcia's Portfolio</h1>
-    <p>Computer Science Undergraduate | AI Enthusiast | Software Developer</p>
-    <p class="construction-notice">
-      🚧 This portfolio is being reconstructed for the <a href="https://acm-design-portfolio.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=portfolio" target="_blank" rel="noopener noreferrer">ACM Design Annual Personal Portfolio Competition</a>. Feel free to explore while it's being updated! 🚧
-    </p>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm Kenny Garcia, a Computer Science undergraduate at CSUF. I’m passionate about AI, software engineering, 
-      and teaching. I love building projects that combine creativity and technology, and I aspire to teach computer 
-      science while working in the tech industry.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>SympToDialog</h3>
-      <p>An AI-powered chatbot for healthcare training using OpenAI API.</p>
-      <a href="https://devpost.com/software/symptodialog" target="_blank" rel="noopener noreferrer">View on DevPost</a>
-      <br>
-      <a href="https://www.nationalacademies.org/news/2023/07/first-national-academies-hackathon-awards-60k-to-innovative-implementable-solutions-to-prevent-treat-and-control-stis-in-the-us" target="_blank" rel="noopener noreferrer">View Winner Announcement</a>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Please click the button below to visit my updated and enhanced portfolio showcasing my latest projects and skills.
+        </p>
+        <a href="https://kennygarcia.net" target="_blank">Visit My New Portfolio</a>
     </div>
-    <div class="project">
-      <h3>CodeClimber</h3>
-      <p>A web app for tracking coding progress on LeetCode and HackerRank.</p>
-      <a href="https://github.com/bebopkenny" target="_blank" rel="noopener noreferrer">View Repository</a>
+    <div class="background-animation">
+        <div class="circle" style="width: 150px; height: 150px; top: 10%; left: 20%;"></div>
+        <div class="circle" style="width: 200px; height: 200px; top: 50%; left: 70%;"></div>
+        <div class="circle" style="width: 300px; height: 300px; top: 80%; left: 30%;"></div>
     </div>
-    <div class="project">
-      <h3>Dorsia</h3>
-      <p>A restaurant website showcasing my web development skills.</p>
-      <a href="https://github.com/bebopkenny" target="_blank" rel="noopener noreferrer">View Repository</a>
-    </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, JavaScript, C++, x86 Assembly</li>
-      <li><strong>Frameworks:</strong> React.js, Node.js, Express.js</li>
-      <li><strong>Tools:</strong> Git, Unix, SQL, Matplotlib</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <ul>
-      <li>Email: <a href="mailto:kennygarcia15@yahoo.com">kennygarcia15@yahoo.com</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/kennygarcia" target="_blank" rel="noopener noreferrer">linkedin.com/in/kennygarcia</a></li>
-      <li>GitHub: <a href="https://github.com/bebopkenny" target="_blank" rel="noopener noreferrer">github.com/bebopkenny</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 Kenny Garcia. All Rights Reserved.</p>
-  </footer>
 </body>
 </html>
